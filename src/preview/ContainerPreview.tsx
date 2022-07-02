@@ -26,6 +26,8 @@ const ContainerPreview = ({ component, isRoot = false, parentFrame }: { componen
             return <RectanglePreview key={e.id} component={e} parentFrame={component.frame}/>;
           case 'text':
             return <TextPreview key={e.id} component={e} parentFrame={component.frame}/>;
+          default:
+            return null;
         }
       })}
     </div>
