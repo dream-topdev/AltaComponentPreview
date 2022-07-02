@@ -2,7 +2,7 @@ import { Color, Component, Rect } from "./componentTypes";
 
 /** A utility function that converts Color object to HTML color string */
 export const parseHTMLColor = (c : Color) => {
-  return `rgba(${c.r * 255}, ${c.g * 255}, ${c.b * 255}, ${c.a * 255})`;
+  return `rgba(${c.r * 255}, ${c.g * 255}, ${c.b * 255}, ${c.a})`;
 }
 
 /** A utility function that generates HTML stylesheet from component */
