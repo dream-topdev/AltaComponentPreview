@@ -1,4 +1,4 @@
-import { Color, Component, Rect, ComponentWithFill } from "./componentTypes";
+import { Color, Component, Rect } from "./componentTypes";
 
 /** A utility function that converts Color object to HTML color string */
 export const parseHTMLColor = (c : Color) => {
