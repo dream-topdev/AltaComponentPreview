@@ -5,7 +5,13 @@ const TextPreview = ({ component, isRoot = false, parentFrame }: { component: Te
   const style = generateHTMLStyle(component, isRoot, parentFrame);  /** Extract style from component */
 
   return (
-    <div id={component.id} style={style}>{component.content}</div>
+    <div
+      data-testid={component.name}
+      id={component.id}
+      style={style}
+    >
+      {component.content}
+    </div>
   )
 }
 

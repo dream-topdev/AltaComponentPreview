@@ -5,7 +5,11 @@ const EllipsePreview = ({ component, isRoot = false, parentFrame }: { component:
   const style = generateHTMLStyle(component, isRoot, parentFrame);  /** Extract style from component */
   
   return (
-    <div id={component.name} style={style} />
+    <div
+      data-testid={component.name}
+      id={component.id}
+      style={style}
+    />
   )
 }
 
