@@ -12,6 +12,7 @@ const ContainerPreview = ({ component, isRoot = false, parentFrame }: { componen
   return (
     <div id={component.name} style={style}>
       {component.children.map(e => {
+        /** each parent frame will be component.frame */
         switch (e.type) {
           case 'container':
             return <ContainerPreview key={e.id} component={e} parentFrame={component.frame}/>;
